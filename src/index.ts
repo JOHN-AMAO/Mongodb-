@@ -17,6 +17,9 @@ app.use(compression());
 app.use(cookieParser());
 app.use(bodyParser.json());
 
+const MONGO_URL =
+  "mongodb+srv://amaojohn:RjT7GUEAnwJkIHmw@restapi.gghwjet.mongodb.net/?retryWrites=true&w=majority";
+
 const server = http.createServer(app);
 
 server.listen(8080, () => {
